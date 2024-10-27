@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "chess logic", "chess logic\chess logic.csproj", "{E21ACE12-4020-4276-967C-DB6C27989BF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "chess_logic", "chess logic\chess_logic.csproj", "{E21ACE12-4020-4276-967C-DB6C27989BF4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{1F5F7109-834A-472D-B6F8-7A2745FD1601}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UI", "UI\UI.csproj", "{1F5F7109-834A-472D-B6F8-7A2745FD1601}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

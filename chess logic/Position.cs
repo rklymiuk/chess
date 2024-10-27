@@ -18,7 +18,7 @@ namespace chess_logic
         }
         public Player SquareColor()
         {
-            if((Row + Column) % 2 == 0)
+            if ((Row + Column) % 2 == 0)
             {
                 return Player.White;
             }
@@ -47,7 +47,9 @@ namespace chess_logic
         {
             return !(left == right);
         }
-        public static Position operator +(Position pos, Position dir) {
+        public static Position operator +(Position pos, Position dir)
+        {
             return new Position(pos.Row + dir.Row, pos.Column + dir.Column);
+        }
     }
 }
