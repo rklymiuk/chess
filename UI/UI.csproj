@@ -28,6 +28,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\chess logic\ChessLogic.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="assets\BishopB.png" />
     <Resource Include="assets\BishopW.png" />
     <Resource Include="assets\Board.png" />

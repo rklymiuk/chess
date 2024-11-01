@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace chess_logic
+namespace ChessLogic
 {
     public class Pawn : Piece
     {
@@ -19,7 +19,7 @@ namespace chess_logic
         public override Piece Copy()
         {
             Pawn copy = new Pawn(Color);
-            copy HasMoved = HasMoved;
+            copy.HasMoved = HasMoved;
             return copy;
         }
     }

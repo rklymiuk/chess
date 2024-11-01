@@ -1,5 +1,5 @@
 ﻿
-namespace chess_logic
+namespace ChessLogic
 {
     public class Direction
     {
