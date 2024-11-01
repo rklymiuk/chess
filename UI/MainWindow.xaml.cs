@@ -20,15 +20,21 @@ namespace UI
     {
         private readonly Image[,] pieceImages = new Image[8, 8];
 
+        private GameState gameState;
+
+
         public MainWindow()
         {
             InitializeComponent();
             InitializeBoard();
+
+            gameState = new GameState(Player.White, Board.initial());
+            DrawBoard(gameState.Board);
         }
 
         private void InitializeBoard()
         {
-            for(int i = 0; i<8; i++)
+            for (int i = 0; i < 8; i++)
             {
                 for (int j = 0; j < 8; j++)
                 {
@@ -38,6 +44,19 @@ namespace UI
 
                 }
             }
+        }
+
+        private void DrawBoard(Board board)
+        {
+            for (int i = 0; i < 8; ++i)
+            {
+                for(int j = 0;j < 8; ++j)
+                {
+                    Piece piece = board[i, j];
+                    pieceImages[i, j].Source = Images.GetImage(piece);
+                }
+            }
+
         }
     }
 }
