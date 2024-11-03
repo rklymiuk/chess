@@ -60,7 +60,7 @@ namespace ChessLogic
                 }
             }
         }
-        private IEnumerable<Move> DiagonalMoves(Postion from, Board board)
+        private IEnumerable<Move> DiagonalMoves(Position from, Board board)
         {
             foreach(Direction dir in new Direction[] { Direction.West, Direction.East })
             {
